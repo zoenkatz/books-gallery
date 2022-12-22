@@ -42,8 +42,8 @@ const BooksGallery = () => {
             })}
             </div>
             {data ? <div className="pagination">
-                <button disabled={currentPage === 0} onClick={() => setCurrentPage(currentPage - 1)}>Prev</button>
-                <button disabled={currentPage === data?.totalItems} onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
+                <button disabled={currentPage === 0} onClick={() => setCurrentPage(currentPage - 11)}>Prev</button>
+                <button disabled={currentPage === data?.totalItems} onClick={() => setCurrentPage(currentPage + 11)}>Next</button>
             </div> : ""}
         </div>
     )
